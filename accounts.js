@@ -1,0 +1,1 @@
+window.MEDDEV_ACCOUNTS = [];

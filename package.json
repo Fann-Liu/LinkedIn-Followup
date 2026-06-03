@@ -1,0 +1,13 @@
+{
+  "name": "linkedin-meddev-monitor",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Static dashboard for monitoring European medical device LinkedIn accounts.",
+  "type": "commonjs",
+  "scripts": {
+    "validate": "node scripts/validate-data.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

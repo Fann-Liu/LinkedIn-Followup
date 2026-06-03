@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>欧洲医疗器械 LinkedIn 账号监测</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <header>
+    <h1>欧洲医疗器械 LinkedIn 账号监测</h1>
+    <p class="sub">目标是沉淀一批长期在欧洲、长期从事医疗器械行业的 LinkedIn 个人/机构账号，并用公开帖子佐证其专业定位。账号数据、运行记录和页面代码已分开管理。</p>
+  </header>
+
+  <section class="summary">
+    <div class="metric"><b id="totalCount">0</b><span>已收录账号</span></div>
+    <div class="metric"><b id="regionCount">0</b><span>欧洲国家/地区覆盖</span></div>
+    <div class="metric"><b>4</b><span>账号类型：协会、媒体、厂商、专家/服务</span></div>
+    <div class="metric"><b id="lastRun">-</b><span>最后更新</span></div>
+  </section>
+
+  <main>
+    <div class="toolbar">
+      <input id="searchInput" placeholder="搜索账号、国家、眼科、MDR、CE、媒体、协会..." />
+      <div class="chips" aria-label="筛选标签">
+        <button class="active" data-filter="all">全部</button>
+        <button data-filter="高优先级">高优先级</button>
+        <button data-filter="本次新增">本次新增</button>
+      </div>
+    </div>
+
+    <div class="note" id="runSummary">正在读取更新记录...</div>
+    <div class="note">说明：这里的“IP”按账号影响力/长期专业定位理解，不是网络 IP 地址。LinkedIn 动态只采用公开索引可读内容；无法拿到具体动态 URL 的账号会标注为“账号页 Updates 证据”。</div>
+
+    <section class="grid" id="cards"></section>
+  </main>
+
+  <footer>
+    数据来源为公开 LinkedIn 索引结果、公开帖子、账号公开资料和相关网页。页面不登录 LinkedIn，不读取私密内容，不批量抓取。自动化目标是为 BD/研究建立可持续关注名单。
+  </footer>
+
+  <script src="config/site.config.js"></script>
+  <script src="data/accounts.js"></script>
+  <script src="data/runs.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>
